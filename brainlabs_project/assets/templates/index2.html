@@ -1,0 +1,13 @@
+<html>
+<body>
+ {%if msg == 'Wrong' %}
+      <h2 align="center">Your Guess is {{msg}}</h2>
+       <h2 align="center">Currect Caiptal of {{question}} is {{correct}}</h2>
+    {%else%}
+    <h2 align="center">Your Guess is {{msg}}</h2>
+    {%endif%}
+
+ <a href="{%url 'index'%}"><p style="text-align:center">Try Again</p></a>
+
+</body>
+</html>
